@@ -5,56 +5,73 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-warehouse-lightgray">
+    <div className="min-h-screen bg-industrial-steel-dark">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
+      <nav className="bg-industrial-iron border-b-2 border-industrial-steel riveted-effect">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <Icon name="Bot" className="text-tech" size={32} />
-              <span className="text-xl font-bold text-warehouse-gray">AutoWarehouse</span>
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-industrial-copper rounded-sm flex items-center justify-center">
+                <Icon name="Cog" className="text-industrial-iron" size={20} />
+              </div>
+              <span className="text-xl font-industrial font-bold text-industrial-silver tracking-wider">
+                AUTOWARE
+              </span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#solutions" className="text-warehouse-gray hover:text-tech transition-colors">Решения</a>
-              <a href="#projects" className="text-warehouse-gray hover:text-tech transition-colors">Проекты</a>
-              <a href="#contact" className="text-warehouse-gray hover:text-tech transition-colors">Контакты</a>
+              <a href="#solutions" className="text-industrial-steel-light hover:text-industrial-copper transition-colors font-mono text-sm tracking-wide">
+                РЕШЕНИЯ
+              </a>
+              <a href="#projects" className="text-industrial-steel-light hover:text-industrial-copper transition-colors font-mono text-sm tracking-wide">
+                ПРОЕКТЫ
+              </a>
+              <a href="#contact" className="text-industrial-steel-light hover:text-industrial-copper transition-colors font-mono text-sm tracking-wide">
+                КОНТАКТЫ
+              </a>
             </div>
-            <Button className="bg-tech hover:bg-tech-dark">
-              Получить консультацию
+            <Button className="bg-industrial-steel hover:bg-industrial-steel-light steel-border font-mono text-xs tracking-wider">
+              КОНСУЛЬТАЦИЯ
             </Button>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-tech-light via-tech to-tech-dark text-white py-20">
+      <section className="relative metal-gradient text-white py-24 riveted-effect">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-5xl font-bold mb-6 leading-tight">
-                Автоматический склад<br />
-                <span className="text-tech-light">нового поколения</span>
+              <div className="inline-block bg-industrial-copper px-3 py-1 text-xs font-mono tracking-wider mb-6">
+                ПРОМЫШЛЕННЫЕ ТЕХНОЛОГИИ
+              </div>
+              <h1 className="text-6xl font-industrial font-black mb-8 leading-tight tracking-tight">
+                АВТОМАТИЧЕСКИЙ<br />
+                <span className="text-industrial-copper">СКЛАД</span><br />
+                БУДУЩЕГО
               </h1>
-              <p className="text-xl mb-8 opacity-90">
-                Повышение эффективности и снижение затрат через инновационные 
-                решения складской автоматизации
+              <p className="text-xl mb-10 opacity-90 font-mono leading-relaxed">
+                МАКСИМАЛЬНАЯ ЭФФЕКТИВНОСТЬ • МИНИМАЛЬНЫЕ ЗАТРАТЫ<br />
+                ПОЛНАЯ АВТОМАТИЗАЦИЯ СКЛАДСКИХ ПРОЦЕССОВ
               </p>
               <div className="flex space-x-4">
-                <Button size="lg" className="bg-white text-tech hover:bg-gray-100">
+                <Button size="lg" className="bg-industrial-copper hover:bg-industrial-rust steel-border font-mono tracking-wider">
                   <Icon name="Play" className="mr-2" size={20} />
-                  Смотреть видео
+                  ДЕМОНСТРАЦИЯ
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-tech">
-                  Узнать больше
+                <Button size="lg" variant="outline" className="border-2 border-industrial-steel text-white hover:bg-industrial-steel hover:text-white font-mono tracking-wider">
+                  ХАРАКТЕРИСТИКИ
                 </Button>
               </div>
             </div>
             <div className="animate-scale-in">
-              <img 
-                src="/img/bdd4303b-b089-4e30-bd62-4ff5234304bb.jpg" 
-                alt="Автоматический склад" 
-                className="rounded-lg shadow-2xl"
-              />
+              <div className="relative">
+                <div className="absolute -inset-4 bg-industrial-steel rounded-lg steel-border"></div>
+                <img 
+                  src="/img/09a36f50-de81-4cc2-a1ac-8fab85a50449.jpg" 
+                  alt="Промышленный автоматический склад" 
+                  className="relative rounded-lg industrial-shadow"
+                />
+              </div>
             </div>
           </div>
         </div>

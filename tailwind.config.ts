@@ -62,19 +62,27 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				tech: {
-					DEFAULT: '#0066CC',
-					light: '#4D94D9',
-					dark: '#004499',
+				industrial: {
+					steel: '#4A5568',
+					'steel-light': '#718096',
+					'steel-dark': '#2D3748',
+					iron: '#1A202C',
+					silver: '#E2E8F0',
+					copper: '#B7791F',
+					rust: '#9C4221',
 				},
-				warehouse: {
-					gray: '#333333',
-					lightgray: '#F5F5F5',
-					white: '#FFFFFF',
+				metal: {
+					primary: '#4A5568',
+					secondary: '#718096',
+					accent: '#B7791F',
+					dark: '#1A202C',
+					light: '#F7FAFC',
 				}
 			},
 			fontFamily: {
-				sans: ['Open Sans', 'system-ui', 'sans-serif'],
+				sans: ['Roboto', 'system-ui', 'sans-serif'],
+				industrial: ['Oswald', 'system-ui', 'sans-serif'],
+				mono: ['Roboto Mono', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,4 +1,5 @@
-@import "@fontsource/open-sans";
+@import "@fontsource/oswald";
+@import "@fontsource/roboto-mono";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 213 100% 40%;
+    --primary: 213 19% 35%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -98,5 +99,43 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .industrial-shadow {
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .metal-gradient {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 50%, #1a202c 100%);
+  }
+
+  .steel-border {
+    border: 2px solid #4a5568;
+  }
+
+  .riveted-effect {
+    position: relative;
+  }
+
+  .riveted-effect::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    background: #718096;
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 2px #4a5568,
+      20px 0 0 -2px #718096,
+      20px 0 0 0 #4a5568,
+      40px 0 0 -2px #718096,
+      40px 0 0 0 #4a5568;
   }
 }
